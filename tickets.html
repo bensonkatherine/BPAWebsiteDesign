@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- This is a template for Stage Fright -->
+<html lang="en">
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div id="pageLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a  class="active" href="tickets.html">Tickets</a>
+                <a href="merch.html">Merch</a>
+                <a href="booking.html">Booking</a>
+            </div>
+        </nav>
+
+        <h6>Tour Dates</h6>
+        <h3>In Northeast Ohio</h3>
+
+        <div id="tourDates">
+            <ul>
+                <li>Grog Shop.....................03/08/2025</li>
+                <li>House of Blues.....................03/15/2025</li>
+                <li>Beachland Ballroom & Tavern.....................04/12/2025</li>
+                <li>Happy Dog at Euclid Tavern.....................04/25/2025</li>
+                <li>The Brothers Lounge.....................05/15/2025</li>
+
+                <li>Baxter's Speakeasy.....................03/09/2025</li>
+                <li>Barro di Mario.....................03/23/2025</li>
+                <li>Getaway.....................04/17/2025</li>
+                <li>Thirsty Cowboy.....................04/26/2025</li>
+                <li>High St. Hop House.....................05/24/2025</li>
+            </ul>
+
+        </div>
+
+        <div id="toBuy"><button onclick="popupFn()">Purchase Now</button></div>
+
+        <div id="overlay"></div>
+        <div id="popupDialog">
+            <p>How Do you want to pay?</p>
+            <button id="purchase" onclick="closeFn()">
+                PayPal
+            </button>
+            <button id="purchase" onclick="closeFn()">
+                Credit/Debit
+            </button>
+            <button id="purchase" onclick="closeFn()">
+                Vennmo
+            </button>
+        </div>
+
+        <script>
+            function popupFn() {
+                document.getElementById(
+                    "overlay"
+                ).style.display = "block";
+                document.getElementById(
+                    "popupDialog"
+                ).style.display = "block";
+            }
+            function closeFn() {
+                document.getElementById(
+                    "overlay"
+                ).style.display = "none";
+                document.getElementById(
+                    "popupDialog"
+                ).style.display = "none";
+            }
+        </script>
+        
+           
+    </body>
+
+
+    <footer>
+        <p>&copy;Copyright 2025  <a href="mailto:CustomerHelp@StgeFrights.com">CustomerHelp@StgeFrights.com</a> </p>
+    </footer>
+</html>

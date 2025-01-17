@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- This is a template for Stage Fright -->
+<html lang="en">
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--JavaScript for Searching-->
+        <nav>
+            <div id="pageLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="tickets.html">Tickets</a>
+                <a class="active" href="merch.html">Merch</a>
+                <a href="booking.html">Booking</a>
+            </div>
+        </nav>
+        <div id="merch">
+            <h1 class="banner">Merch</h1>
+
+            <div id = "merchItemsColOne" class="merchItems">
+                <div id="itemOne">
+                    <img src="images/vinyl.png" alt="Stage Frights first EP Into the Graveyard" width="100px" height="150">
+                    <h3>Into the Graveyard</h3>
+                    <h6>A Vinyl of <span class="bandName">Stage Frights</span> first EP <span class="bandName">Into the Graveyard</span></h6>
+                    <p>$30</p>
+                </div>
+   
+                <div id="itemTwo">
+                    <img src="images/sticker.png" alt="A Sticker featuring graphics form Stage Frights newest release" width="100px" height="150">
+                    <h3>Stage Fright Sticker</h3>
+                    <h6>A Sticker featuring graphics from <span class="bandName">Stage Frights</span> newest album</h6>
+                    <p>$5</p>
+                </div>
+   
+                <div id="itemThree">
+                    <img src="images/hoodie.png" alt="A hoodie featuring graphics form Stage Frights newest release" width="100px" height="150">
+                    <h3>Stage Fright Hoodie</h3>
+                    <h6>A hoodie featuring graphics from <span class="bandName">Stage Frights</span> newest Album</h6>
+                    <p>$40</p>
+                </div>
+            </div>
+
+            <div  id = "merchItemsColTwo" class="merchItems">
+                <div id="itemFour">
+                    <img src="images/tshirt.png" alt="A T-Shirt featuring graphics form Stage Frights newest release" width="100px" height="150">
+                    <h3>Stage Fright T-Shirt</h3>
+                    <h6>A T-Shirt featuring graphics form <span class="bandName">Stage Frights</span> newest release</h6>
+                    <p>$15</p>
+                </div>
+   
+                <div id="itemFive">
+                    <img src="images/vinyl2.png" alt="A vinyl of the newest Stage Fright Release" height="150">
+                    <h3>Vinyl</h3>
+                    <h6>A vinyl of the newest <span class="bandName">Stage Frights</span> release, <span class="bandName">The Raven</span></h6>
+                    <p>$30</p>
+                </div>
+   
+                <div id="itemSix">
+                    <img src="images/keychain.png" alt="A keychain featuring graphics form Stage Frights newest release" width="100px" height="150">
+                    <h3>Stage Fright Keychain</h3>
+                    <h6>A keychain featuring graphics form <span class="bandName">Stage Frights</span> newest release</h6>
+                    <p>$10</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="toBuy"><button onclick="popupFn()">Purchase Now</button></div>
+
+        <div id="overlay"></div>
+        <div id="popupDialog">
+            <p>How Do you want to pay?</p>
+            <button id="purchase" onclick="closeFn()">
+                PayPal
+            </button>
+            <button id="purchase" onclick="closeFn()">
+                Credit/Debit
+            </button>
+            <button id="purchase" onclick="closeFn()">
+                Vennmo
+            </button>
+        </div>
+
+        <script>
+            function popupFn() {
+                document.getElementById(
+                    "overlay"
+                ).style.display = "block";
+                document.getElementById(
+                    "popupDialog"
+                ).style.display = "block";
+            }
+            function closeFn() {
+                document.getElementById(
+                    "overlay"
+                ).style.display = "none";
+                document.getElementById(
+                    "popupDialog"
+                ).style.display = "none";
+            }
+        </script>
+    </body>
+
+    <footer>
+        <p>&copy;Copyright 2025  <a href="mailto:CustomerHelp@StgeFrights.com">CustomerHelp@StgeFrights.com</a> </p>
+    </footer>
+</html>
